@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D1D48E23272BF83500F515D6 /* HackdayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D48E22272BF83500F515D6 /* HackdayApp.swift */; };
+		D1D48E25272BF83500F515D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D48E24272BF83500F515D6 /* ContentView.swift */; };
+		D1D48E27272BF83700F515D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1D48E26272BF83700F515D6 /* Assets.xcassets */; };
+		D1D48E2A272BF83700F515D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1D48E29272BF83700F515D6 /* Preview Assets.xcassets */; };
+		D1DB8AF5272C02B10094A9EE /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D48E37272BFA2800F515D6 /* WidgetKit.framework */; };
+		D1DB8AF6272C02B10094A9EE /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D48E39272BFA2800F515D6 /* SwiftUI.framework */; };
+		D1DB8AF9272C02B10094A9EE /* SkyNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DB8AF8272C02B10094A9EE /* SkyNews.swift */; };
+		D1DB8AFB272C02B20094A9EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1DB8AFA272C02B20094A9EE /* Assets.xcassets */; };
+		D1DB8AFF272C02B20094A9EE /* SkyNewsExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D1DB8AF4272C02B10094A9EE /* SkyNewsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D1DB8B04272C04600094A9EE /* TeaserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DB8B03272C04600094A9EE /* TeaserView.swift */; };
+		D1DB8B05272C05F10094A9EE /* TeaserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DB8B03272C04600094A9EE /* TeaserView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D1DB8AFD272C02B20094A9EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1D48E17272BF83500F515D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1DB8AF3272C02B10094A9EE;
+			remoteInfo = SkyNewsExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D1D48E4A272BFA2A00F515D6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D1DB8AFF272C02B20094A9EE /* SkyNewsExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D1D48E1F272BF83500F515D6 /* Hackday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackday.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1D48E22272BF83500F515D6 /* HackdayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackdayApp.swift; sourceTree = "<group>"; };
+		D1D48E24272BF83500F515D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D1D48E26272BF83700F515D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1D48E29272BF83700F515D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D1D48E2B272BF83700F515D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1D48E37272BFA2800F515D6 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		D1D48E39272BFA2800F515D6 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		D1DB8AF4272C02B10094A9EE /* SkyNewsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SkyNewsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1DB8AF8272C02B10094A9EE /* SkyNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyNews.swift; sourceTree = "<group>"; };
+		D1DB8AFA272C02B20094A9EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1DB8AFC272C02B20094A9EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1DB8B03272C04600094A9EE /* TeaserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaserView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1D48E1C272BF83500F515D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1DB8AF1272C02B10094A9EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1DB8AF6272C02B10094A9EE /* SwiftUI.framework in Frameworks */,
+				D1DB8AF5272C02B10094A9EE /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D1D48E16272BF83500F515D6 = {
+			isa = PBXGroup;
+			children = (
+				D1D48E21272BF83500F515D6 /* Hackday */,
+				D1DB8AF7272C02B10094A9EE /* SkyNews */,
+				D1D48E36272BFA2800F515D6 /* Frameworks */,
+				D1D48E20272BF83500F515D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D1D48E20272BF83500F515D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1D48E1F272BF83500F515D6 /* Hackday.app */,
+				D1DB8AF4272C02B10094A9EE /* SkyNewsExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1D48E21272BF83500F515D6 /* Hackday */ = {
+			isa = PBXGroup;
+			children = (
+				D1D48E22272BF83500F515D6 /* HackdayApp.swift */,
+				D1D48E24272BF83500F515D6 /* ContentView.swift */,
+				D1D48E26272BF83700F515D6 /* Assets.xcassets */,
+				D1D48E2B272BF83700F515D6 /* Info.plist */,
+				D1D48E28272BF83700F515D6 /* Preview Content */,
+			);
+			path = Hackday;
+			sourceTree = "<group>";
+		};
+		D1D48E28272BF83700F515D6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D1D48E29272BF83700F515D6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D1D48E36272BFA2800F515D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1D48E37272BFA2800F515D6 /* WidgetKit.framework */,
+				D1D48E39272BFA2800F515D6 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1DB8AF7272C02B10094A9EE /* SkyNews */ = {
+			isa = PBXGroup;
+			children = (
+				D1DB8AF8272C02B10094A9EE /* SkyNews.swift */,
+				D1DB8AFA272C02B20094A9EE /* Assets.xcassets */,
+				D1DB8AFC272C02B20094A9EE /* Info.plist */,
+				D1DB8B03272C04600094A9EE /* TeaserView.swift */,
+			);
+			path = SkyNews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D1D48E1E272BF83500F515D6 /* Hackday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1D48E2E272BF83700F515D6 /* Build configuration list for PBXNativeTarget "Hackday" */;
+			buildPhases = (
+				D1D48E1B272BF83500F515D6 /* Sources */,
+				D1D48E1C272BF83500F515D6 /* Frameworks */,
+				D1D48E1D272BF83500F515D6 /* Resources */,
+				D1D48E4A272BFA2A00F515D6 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1DB8AFE272C02B20094A9EE /* PBXTargetDependency */,
+			);
+			name = Hackday;
+			productName = Hackday;
+			productReference = D1D48E1F272BF83500F515D6 /* Hackday.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D1DB8AF3272C02B10094A9EE /* SkyNewsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1DB8B02272C02B20094A9EE /* Build configuration list for PBXNativeTarget "SkyNewsExtension" */;
+			buildPhases = (
+				D1DB8AF0272C02B10094A9EE /* Sources */,
+				D1DB8AF1272C02B10094A9EE /* Frameworks */,
+				D1DB8AF2272C02B10094A9EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkyNewsExtension;
+			productName = SkyNewsExtension;
+			productReference = D1DB8AF4272C02B10094A9EE /* SkyNewsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1D48E17272BF83500F515D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					D1D48E1E272BF83500F515D6 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					D1DB8AF3272C02B10094A9EE = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = D1D48E1A272BF83500F515D6 /* Build configuration list for PBXProject "Hackday" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D1D48E16272BF83500F515D6;
+			productRefGroup = D1D48E20272BF83500F515D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1D48E1E272BF83500F515D6 /* Hackday */,
+				D1DB8AF3272C02B10094A9EE /* SkyNewsExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D1D48E1D272BF83500F515D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1D48E2A272BF83700F515D6 /* Preview Assets.xcassets in Resources */,
+				D1D48E27272BF83700F515D6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1DB8AF2272C02B10094A9EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1DB8AFB272C02B20094A9EE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D1D48E1B272BF83500F515D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1D48E25272BF83500F515D6 /* ContentView.swift in Sources */,
+				D1DB8B04272C04600094A9EE /* TeaserView.swift in Sources */,
+				D1D48E23272BF83500F515D6 /* HackdayApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1DB8AF0272C02B10094A9EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1DB8B05272C05F10094A9EE /* TeaserView.swift in Sources */,
+				D1DB8AF9272C02B10094A9EE /* SkyNews.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D1DB8AFE272C02B20094A9EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1DB8AF3272C02B10094A9EE /* SkyNewsExtension */;
+			targetProxy = D1DB8AFD272C02B20094A9EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D1D48E2C272BF83700F515D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D1D48E2D272BF83700F515D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D1D48E2F272BF83700F515D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Hackday/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Hackday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sky.Hackday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D1D48E30272BF83700F515D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Hackday/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Hackday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sky.Hackday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D1DB8B00272C02B20094A9EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SkyNews/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sky.Hackday.SkyNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D1DB8B01272C02B20094A9EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SkyNews/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sky.Hackday.SkyNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D1D48E1A272BF83500F515D6 /* Build configuration list for PBXProject "Hackday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1D48E2C272BF83700F515D6 /* Debug */,
+				D1D48E2D272BF83700F515D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1D48E2E272BF83700F515D6 /* Build configuration list for PBXNativeTarget "Hackday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1D48E2F272BF83700F515D6 /* Debug */,
+				D1D48E30272BF83700F515D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1DB8B02272C02B20094A9EE /* Build configuration list for PBXNativeTarget "SkyNewsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1DB8B00272C02B20094A9EE /* Debug */,
+				D1DB8B01272C02B20094A9EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D1D48E17272BF83500F515D6 /* Project object */;
+}
