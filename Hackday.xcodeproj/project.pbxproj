@@ -18,6 +18,10 @@
 		D1DB8AFF272C02B20094A9EE /* SkyNewsExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D1DB8AF4272C02B10094A9EE /* SkyNewsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D1DB8B04272C04600094A9EE /* TeaserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DB8B03272C04600094A9EE /* TeaserView.swift */; };
 		D1DB8B05272C05F10094A9EE /* TeaserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DB8B03272C04600094A9EE /* TeaserView.swift */; };
+		D1DB8B07272C1E1C0094A9EE /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DB8B06272C1E1C0094A9EE /* Article.swift */; };
+		D1DB8B08272C1E380094A9EE /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DB8B06272C1E1C0094A9EE /* Article.swift */; };
+		D1DB8B0E272C1EC50094A9EE /* MockArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DB8B0D272C1EC50094A9EE /* MockArticle.swift */; };
+		D1DB8B0F272C1EC50094A9EE /* MockArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DB8B0D272C1EC50094A9EE /* MockArticle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,8 @@
 		D1DB8AFA272C02B20094A9EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1DB8AFC272C02B20094A9EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1DB8B03272C04600094A9EE /* TeaserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaserView.swift; sourceTree = "<group>"; };
+		D1DB8B06272C1E1C0094A9EE /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		D1DB8B0D272C1EC50094A9EE /* MockArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockArticle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,12 +137,38 @@
 		D1DB8AF7272C02B10094A9EE /* SkyNews */ = {
 			isa = PBXGroup;
 			children = (
-				D1DB8AF8272C02B10094A9EE /* SkyNews.swift */,
+				D1DB8B11272C1F510094A9EE /* Configurations */,
 				D1DB8AFA272C02B20094A9EE /* Assets.xcassets */,
 				D1DB8AFC272C02B20094A9EE /* Info.plist */,
-				D1DB8B03272C04600094A9EE /* TeaserView.swift */,
+				D1DB8B0C272C1EAC0094A9EE /* Mocks */,
+				D1DB8AF8272C02B10094A9EE /* SkyNews.swift */,
+				D1DB8B10272C1F3C0094A9EE /* Views */,
 			);
 			path = SkyNews;
+			sourceTree = "<group>";
+		};
+		D1DB8B0C272C1EAC0094A9EE /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				D1DB8B0D272C1EC50094A9EE /* MockArticle.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		D1DB8B10272C1F3C0094A9EE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D1DB8B03272C04600094A9EE /* TeaserView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D1DB8B11272C1F510094A9EE /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				D1DB8B06272C1E1C0094A9EE /* Article.swift */,
+			);
+			path = Configurations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,8 +272,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1D48E25272BF83500F515D6 /* ContentView.swift in Sources */,
+				D1DB8B07272C1E1C0094A9EE /* Article.swift in Sources */,
 				D1DB8B04272C04600094A9EE /* TeaserView.swift in Sources */,
 				D1D48E23272BF83500F515D6 /* HackdayApp.swift in Sources */,
+				D1DB8B0E272C1EC50094A9EE /* MockArticle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +284,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1DB8B05272C05F10094A9EE /* TeaserView.swift in Sources */,
+				D1DB8B08272C1E380094A9EE /* Article.swift in Sources */,
+				D1DB8B0F272C1EC50094A9EE /* MockArticle.swift in Sources */,
 				D1DB8AF9272C02B10094A9EE /* SkyNews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
