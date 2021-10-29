@@ -8,10 +8,33 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var deeplink: Deeplink
+    
+    
     var body: some View {
-        Text("Hackday")
-            .font(.largeTitle)
-            .padding()
+        ZStack {
+            Image("skynews")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+            
+            if deeplink.isPresented {
+                CoolView(url: deeplink.url!.absoluteString)
+                
+            }
+        }
+    }
+}
+
+struct CoolView: View {
+    var url: String
+    
+    var body: some View {
+        ZStack {
+            Color.black
+                .ignoresSafeArea()
+            Text(url)
+        }
+        
     }
 }
 

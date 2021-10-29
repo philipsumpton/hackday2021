@@ -13,6 +13,7 @@ struct Article {
     let headline: String
     let image: String
     let id: Int
+    let url: String
 }
 
 struct ArticleEntry: TimelineEntry {

@@ -36,6 +36,6 @@ struct TeaserView: View {
 
 struct TeaserView_Previews: PreviewProvider {
     static var previews: some View {
-        TeaserView(article: .init(significance: "Breaking", headline: "Joe does not have a shirt", image: "https://thumbnails.cbc.ca/maven_legacy/thumbnails/332/743/KXVO-Pumpkin-Dance_2500kbps_852x480_1079501379954.jpg", id: 123 ))
+        TeaserView(article: .init(significance: "Breaking", headline: "Joe does not have a shirt", image: "https://thumbnails.cbc.ca/maven_legacy/thumbnails/332/743/KXVO-Pumpkin-Dance_2500kbps_852x480_1079501379954.jpg", id: 123, url: "https://google.com" ))
     }
 }

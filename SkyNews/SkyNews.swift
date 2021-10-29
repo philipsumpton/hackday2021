@@ -38,9 +38,12 @@ struct SkyNewsEntryView : View {
     var body: some View {
         VStack {
             Image("logo")
-            
-            TeaserView(article: mocks[0])
-            TeaserView(article: mocks[1])
+            Link(destination: URL(string: mocks[0].url)!) {
+                TeaserView(article: mocks[0])
+            }
+            Link(destination: URL(string: mocks[1].url)!) {
+                TeaserView(article: mocks[1])
+            }
         }
     }
 }
