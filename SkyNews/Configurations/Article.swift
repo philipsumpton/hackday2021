@@ -12,7 +12,7 @@ struct Article {
     let significance: String?
     let headline: String
     let image: String
-    let link: String
+    let id: Int
 }
 
 struct ArticleEntry: TimelineEntry {

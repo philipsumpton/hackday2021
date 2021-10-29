@@ -33,13 +33,14 @@ struct Provider: TimelineProvider {
 
 struct SkyNewsEntryView : View {
     var entry: Provider.Entry
-
+    var mocks = mockArticles()
+    
     var body: some View {
         VStack {
             Image("logo")
             
-            TeaserView(significance: "Breaking", headline: "Joe does not have a shirt")
-            TeaserView(significance: nil, headline: "Joe wont let us go for lunch")
+            TeaserView(article: mocks[0])
+            TeaserView(article: mocks[1])
         }
     }
 }

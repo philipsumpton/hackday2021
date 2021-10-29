@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct TeaserView: View {
-    var significance: String?
-    var headline: String
+    var article: Article
     
     var body: some View {
         HStack(spacing: 20) {
@@ -18,13 +17,13 @@ struct TeaserView: View {
                 .frame(width: 40, height: 40, alignment: .center)
             
             VStack(alignment: .leading) {
-                if significance != nil {
-                    Text(significance ?? "")
+                if article.significance != nil {
+                    Text(article.significance ?? "")
                         .font(.system(size: 10))
                         .foregroundColor(.yellow)
                 }
 
-                Text(headline)
+                Text(article.headline)
                     .font(.system(size: 14))
             }
             
@@ -37,6 +36,6 @@ struct TeaserView: View {
 
 struct TeaserView_Previews: PreviewProvider {
     static var previews: some View {
-        TeaserView(significance: "Breaking", headline: "Joe does not have a shirt")
+        TeaserView(article: .init(significance: "Breaking", headline: "Joe does not have a shirt", image: "https://thumbnails.cbc.ca/maven_legacy/thumbnails/332/743/KXVO-Pumpkin-Dance_2500kbps_852x480_1079501379954.jpg", id: 123 ))
     }
 }

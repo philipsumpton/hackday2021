@@ -13,13 +13,13 @@ func mockArticles() -> [Article] {
             significance: "Breaking",
             headline: "Ooooo errr Pumpkin man spotted at the dock",
             image: "",
-            link: ""
+            id: 123
         ),
         .init(
             significance: nil,
             headline: "Joe has no shirt",
             image: "",
-            link: ""
+            id: 123
         )
     ]
 }
